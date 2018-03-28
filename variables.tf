@@ -10,6 +10,14 @@ variable "ssh_private_key" {}
 
 variable "SubnetOCID" {}
 
+variable "user" {}
+variable "password" {}
+variable "identity_domain" {}
+variable "java_endpoint" {}
+
+
+
+
 # Choose an Availability Domain
 variable "AD" {
     default = "1"

@@ -5,3 +5,11 @@ provider "oci" {
   private_key_path = "${var.private_key_path}"
   region = "${var.region}"
 }
+
+provider "oraclepaas" {
+  user              = "${var.user}"
+  password          = "${var.password}"
+  identity_domain   = "${var.identity_domain}"
+  # database_endpoint = "..."
+  java_endpoint     = "${var.java_endpoint}"
+}
